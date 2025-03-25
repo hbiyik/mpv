@@ -335,7 +335,7 @@ const struct ra_hwdec_driver ra_hwdec_drmprime_overlay = {
 };
 
 const struct ra_hwdec_driver ra_hwdec_drmprime_rkmpp_overlay = {
-    .name = "drmprime-overlay",
+    .name = "drmprime-rkmpp-overlay",
     .priv_size = sizeof(struct priv),
     .imgfmts = {IMGFMT_DRMPRIME, 0},
     .device_type = AV_HWDEVICE_TYPE_RKMPP,
