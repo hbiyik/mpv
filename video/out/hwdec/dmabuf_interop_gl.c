@@ -376,8 +376,7 @@ bool dmabuf_interop_gl_init(const struct ra_hwdec *hw,
     const char *imageext = gl->es ? "GL_OES_EGL_image" : "GL_EXT_EGL_image_storage";
     if (!gl_check_extension(exts, "EGL_EXT_image_dma_buf_import") ||
         !gl_check_extension(exts, "EGL_KHR_image_base") ||
-        !gl_check_extension(gl->extensions, imageext) ||
-        !(gl->mpgl_caps & MPGL_CAP_TEX_RG)) {
+        !gl_check_extension(gl->extensions, imageext)) {
         return false;
     }
 
